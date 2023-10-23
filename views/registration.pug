@@ -1,0 +1,13 @@
+//- contact.pug
+extends base.pug
+
+
+    
+block styles
+    style
+        include ../static/css/registration.css
+
+block content
+    h1(class="name") #{name}   
+    h2(class="message") #{message}
+    a(href ="/" ) click here to Continue

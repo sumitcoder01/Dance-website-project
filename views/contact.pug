@@ -1,0 +1,19 @@
+//- contact.pug
+extends base.pug
+
+
+    
+block styles
+    style
+        include ../static/css/contact.css
+
+block content
+    form(action="/registration", method="post")
+        input(type="text" class="myInput" name="name" placeholder ="enter your name")
+        input(type="text" class="myInput" name="age" placeholder ="enter your age")
+        input(type="text" class="myInput" name="mobileNumber" placeholder ="enter your mobileNumber")
+        input(type="email" class="myInput" name="email" placeholder ="enter your email")
+        input(type="password" class="myInput" name="password" placeholder ="enter your password")
+        input(type="password" class="myInput" name="cpassword" placeholder ="Confirm your password")
+        button(type="submit" class="btn") Submit
+

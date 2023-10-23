@@ -1,0 +1,26 @@
+//- base.pug
+doctype html
+html
+    head
+        title Sumit Dance Academy - #{title}
+        link(rel ="icon" type ="image/x-icon" href = "../favicon.ico")
+        style
+            include ../static/css/base.css
+                
+        block styles 
+    body
+        header
+            nav#navbar
+                div#logo
+                    img(src= "../static/img/icon.png" alt="dance")
+                ul.navlist
+                    li #[a(href="/") Home]
+                    li #[a(href="/about") About]
+                    li #[a(href="/contact") Contact Us]
+        div.container            
+            block content
+            
+        footer#footer
+            p Copyright (c) 2023 SumitDanceAcademy.com | All rights  reserved
+
+        script(src='../static/js/script.js')
